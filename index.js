@@ -15,3 +15,11 @@ function calculate() {
     display.value = "Error";
   }
 }
+
+function deleteBtn() {
+  try {
+    display.value = display.value.slice(0, -1);
+  } catch (error) {
+    display.value = "Error";
+  }
+}
